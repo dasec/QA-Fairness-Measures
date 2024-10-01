@@ -12,12 +12,16 @@
    ·
    <a href="https://www.ntnu.edu/employees/christoph.busch"><strong>Christoph Busch</strong></a>
   </p>
+
+  <p align="center">
+  <img src="figures/fairness_diagram.png" />
+</p>
   
   <h2 align="center">ICPR 2024 - 2nd Workshop on Fairness in Biometric Systems</h2>
   <div align="center">
   </div>
 
-Official repository of the of the [ICPR 2024 - 2nd Workshop on Fairness in Biometric Systems](https://sites.google.com/view/icpr2024-fairbio/home) paper [Fairness measures for biometric quality assessment](https://arxiv.org/pdf/2408.11392)
+This repository contains the official implementation of the [ICPR 2024 - 2nd Workshop on Fairness in Biometric Systems](https://sites.google.com/view/icpr2024-fairbio/home) paper [Fairness measures for biometric quality assessment](https://arxiv.org/pdf/2408.11392)
 
 ## Overview
 
@@ -53,13 +57,13 @@ Ensure you have Python >= 3.8.6 installed on your system.
 To install the necessary dependencies for the usage of proposed fairness measures, run the following command in your terminal:
 
 ```
-   pip install numpy=1.23.4
+pip install numpy=1.23.4
 ```
 
 If you are interested in re-running the experiments from the paper in the provided jupyter-notebook, you will need to install additional packages:
 
 ```
-   pip install pandas=1.1.5, seaborn=0.11.1, matplotlib=3.3.3
+pip install pandas=1.1.5, seaborn=0.11.1, matplotlib=3.3.3
 ```
 
 ## Usage
@@ -67,7 +71,7 @@ If you are interested in re-running the experiments from the paper in the provid
 ### 1. Clone this repository
 
 ```
-   git clone https://github.com/dasec/QA-Fairness-Measures.git
+git clone https://github.com/dasec/QA-Fairness-Measures.git
 ```
 
 ### 2. Use the fairness measures as demonstrated in the examples
