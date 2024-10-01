@@ -1,10 +1,26 @@
-# Fairness measures for biometric quality assessment
+<h1 align="center"> Fairness measures for biometric quality assessment</h1>
+<p align="center">
 
-Official repository of the paper [Fairness measures for biometric quality assessment](https://arxiv.org/pdf/2408.11392).
+  <p align="center">
+   <a href="https://dasec.h-da.de/staff/andre-doersch/"><strong>André Dörsch</strong></a>
+   ·
+   <a href="https://dasec.h-da.de/staff/torsten-schlett/"><strong>Torsten Schlett</strong></a>
+   ·
+   <strong>Peter Munch</strong></a>
+   ·
+   <a href="https://dasec.h-da.de/staff/christian-rathgeb/"><strong>Christian Rathgeb</strong></a>
+   ·
+   <a href="https://www.ntnu.edu/employees/christoph.busch"><strong>Christoph Busch</strong></a>
+  </p>
+  
+  <h2 align="center">ICPR 2024 - 2nd Workshop on Fairness in Biometric Systems</h2>
+  <div align="center">
+  </div>
 
-This Paper was accepted at the **ICPR 2024 - 2nd Workshop on Fairness in Biometric Systems**
+Official repository of the of the [ICPR 2024 - 2nd Workshop on Fairness in Biometric Systems](https://sites.google.com/view/icpr2024-fairbio/home) paper [Fairness measures for biometric quality assessment](https://arxiv.org/pdf/2408.11392)
 
 ## Overview
+
 This work proposes multiple fairness measures for evaluating quality components
 across demographic groups. This research contributes to the development of fair biometric systems by measuring whether quality components could incorporate demographic variables into their decision.
 
@@ -13,6 +29,7 @@ across demographic groups. This research contributes to the development of fair 
 </p>
 
 ## Abstract
+
 Quality assessment algorithms measure the quality of a captured biometric sample. Since the sample quality strongly affects the
 recognition performance of a biometric system, it is essential to only
 process samples of sufficient quality and discard samples of low-quality.
@@ -26,30 +43,37 @@ compare multiple fairness measures for evaluating quality components
 across demographic groups. Proposed measures, could be used as potential candidates for an upcoming standard in this important field.
 
 ## Setup
+
 ### Requirements
+
 Ensure you have Python >= 3.8.6 installed on your system.
 
 ### Package installation
+
 To install the necessary dependencies for the usage of proposed fairness measures, run the following command in your terminal:
 
 ```
    pip install numpy=1.23.4
 ```
+
 If you are interested in re-running the experiments from the paper in the provided jupyter-notebook, you will need to install additional packages:
+
 ```
    pip install pandas=1.1.5, seaborn=0.11.1, matplotlib=3.3.3
 ```
 
 ## Usage
-### 1. Clone this repository:
+
+### 1. Clone this repository
+
 ```
    git clone https://github.com/dasec/QA-Fairness-Measures.git
 ```
 
 ### 2. Use the fairness measures as demonstrated in the examples
 
-
 #### Example of calculating the Mean-GC-SQFR and Mean-GC-CSQFR
+
 ```
 # Imports
 from src.fairness_measures.fairness_measure_gc import gini_coefficient
@@ -71,6 +95,7 @@ Mean_GC_CSQFR = (1 - gini_value) ** 3
 ```
 
 #### Example of calculating the LWM-GC-SQFR and LWM-GC-CSQFR
+
 ```
 # Imports
 from src.fairness_measures.fairness_measure_gc import gini_coefficient
@@ -94,6 +119,7 @@ LWM_GC_CSQFR = (1 - gini_coefficient([LWM_D1, LWM_D2])**3)
 ```
 
 #### Example of calculating the MDG-SQFR
+
 ```
 # Imports
 from src.fairness_measures.fairness_measure_mdg import mean_discard_gap
