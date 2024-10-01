@@ -9,7 +9,7 @@ This work proposes multiple fairness measures for evaluating quality components
 across demographic groups. This research contributes to the development of fair biometric systems by measuring whether quality components could incorporate demographic variables into their decision.
 
 <p align="center">
-  <img src="figures/table_fairness_measure_comparisons.png" />
+  <img src="figures/fairness_measure_figure.png" />
 </p>
 
 ## Abstract
