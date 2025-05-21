@@ -21,7 +21,7 @@
   <div align="center">
   </div>
 
-This repository contains the official implementation of the [ICPR 2024 - 2nd Workshop on Fairness in Biometric Systems](https://sites.google.com/view/icpr2024-fairbio/home) paper [Fairness measures for biometric quality assessment](https://arxiv.org/pdf/2408.11392)
+This repository contains the official implementation of the [ICPR 2024 - 2nd Workshop on Fairness in Biometric Systems](https://sites.google.com/view/icpr2024-fairbio/home) paper [Fairness measures for biometric quality assessment](https://doi.org/10.1007/978-3-031-87657-8_20)
 
 ## Overview
 
@@ -144,13 +144,14 @@ MGD_SQFR = 1 - mean_discard_gap(groups)
 If you use this repository and found it useful for your research, please consider citing this paper:
 
 ```
-@misc{Dörsch-FairnessMeasures-2024,
-      title={Fairness measures for biometric quality assessment}, 
+@inproceedings{Doersch-FairnessMethodology-FIQA-ICPR-2024,
       author={A. Dörsch and T. Schlett and P. Munch and C. Rathgeb and C.Busch},
-      year={2024},
-      eprint={2408.11392},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2408.11392}, 
+      title={Fairness measures for biometric quality assessment},
+      booktitle = {Pattern Recognition. ICPR 2024 International Workshops and Challenges},
+      pages = {287--298},
+      year={2025},
+      publisher = {Springer Nature Switzerland},
+      isbn = {978-3-031-87657-8},
+      doi = {https://doi.org/10.1007/978-3-031-87657-8_20}
 }
 ```
